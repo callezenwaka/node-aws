@@ -1,11 +1,24 @@
 {
   "name": "node-aws",
   "version": "1.0.0",
-  "description": "",
+  "description": "A node-AWS demo app.",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
+    "dev": "nodemon -r dotenv/config index.js",
     "test": "node test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/callezenwaka/node-aws.git"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "dotenv": "^10.0.0",
+    "nodemon": "^2.0.15"
   },
   "keywords": [
     "AWS",
