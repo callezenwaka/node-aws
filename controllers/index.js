@@ -4,6 +4,7 @@ AWS.config.update({
   region: process.env.AWS_DEFAULT_REGION,
   accessKeyId: process.env.AWS_ACCESS_KEY_ID,
   secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
+  endpoint: `http://${process.env.HOST}:${HOST_PORT}`,
 });
 
 const dynamoClient = new AWS.DynamoDB.DocumentClient();
